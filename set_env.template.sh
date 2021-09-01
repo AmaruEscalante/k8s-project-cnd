@@ -1,0 +1,10 @@
+#!/usr/bin/zsh
+export POSTGRES_USERNAME='username'
+export POSTGRES_PASSWORD='password'
+export POSTGRES_HOST='postgreshost'
+export POSTGRES_DB='db'
+export AWS_BUCKET='your-bucket'
+export AWS_REGION='your-region'
+export AWS_PROFILE='awsprofile'
+export JWT_SECRET='secret'
+export URL='http://localhost:8100'
