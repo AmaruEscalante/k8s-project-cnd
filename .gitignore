@@ -1,1 +1,4 @@
 set_env.sh
+udagram-deployment/env-secret.yaml
+udagram-deployment/aws-secret.yaml
+udagram-deployment/env-configmap.yaml

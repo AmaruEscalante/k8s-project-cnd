@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-reverseproxy-deployment
+  labels:
+    app: backend-reverseproxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend-reverseproxy
+  template:
+    metadata:
+      labels:
+        app: backend-reverseproxy
+    spec:
+      containers:
+        - name: backend-reverseproxy
+          image: amaruescalante/udagram-reverseproxy:v2
+          ports:
+            - containerPort: 8080
