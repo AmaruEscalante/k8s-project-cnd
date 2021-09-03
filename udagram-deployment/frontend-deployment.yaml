@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: amaruescalante/udagram-frontend:v3
+          image: amaruescalante/udagram-frontend:eks
           ports:
             - containerPort: 80
