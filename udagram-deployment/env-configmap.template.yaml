@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  backend-postgres-host: "yourdata"
+  backend-postgres-db: "yourdata"
+  backend-aws-bucket: "yourdata"
+  backend-aws-region: "yourdata"
+  backend-aws-profile: "yourdata"
+  backend-url: "yourdata"
+  backend-port: "yourdata"
