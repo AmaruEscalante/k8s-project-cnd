@@ -61,6 +61,10 @@ router.post('/',
       const caption = req.body.caption;
       const fileName = req.body.url; // same as S3 key name
 
+      console.log(caption);
+      console.log(fileName);
+      
+
       if (!caption) {
         return res.status(400).send({message: 'Caption is required or malformed.'});
       }
