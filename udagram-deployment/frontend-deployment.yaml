@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: amaruescalante/udagram-frontend:eksv3
+          image: amaruescalante/udagram-frontend:eksv4
           imagePullPolicy: Always
           resources:
             requests:
