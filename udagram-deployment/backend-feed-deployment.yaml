@@ -17,6 +17,14 @@ spec:
       containers:
         - name: backend-feed
           image: amaruescalante/udagram-api-feed:v1
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "1024Mi"
+              cpu: "500m"
           ports:
             - containerPort: 8080
           env:

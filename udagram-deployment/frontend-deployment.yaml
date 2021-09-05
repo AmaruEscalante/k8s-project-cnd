@@ -16,6 +16,14 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: amaruescalante/udagram-frontend:eks
+          image: amaruescalante/udagram-frontend:eksv3
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "1024Mi"
+              cpu: "500m"
           ports:
             - containerPort: 80
